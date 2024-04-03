@@ -8,8 +8,6 @@ FROM docker.io/library/golang:1.21.8@sha256:856073656d1a517517792e6cdd2f7a5ef080
 
 RUN echo 'deb http://deb.debian.org/debian buster-backports main' >> /etc/apt/sources.list
 
-# Comment
-RUN echo 'we are running some cool things'
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
     openssh-server \
